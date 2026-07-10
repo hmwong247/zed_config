@@ -1,0 +1,107 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "show_commit_summary": true
+    }
+  },
+  "remove_trailing_whitespace_on_save": false,
+  "diff_view_style": "split",
+  "completion_menu_scrollbar": "system",
+  "diagnostics": {
+    "include_warnings": false
+  },
+  "diagnostics_max_severity": "error",
+  "proxy": "",
+  "colorize_brackets": true,
+  "middle_click_paste": false,
+  "code_lens": "on",
+  "inlay_hints": {
+    "show_parameter_hints": true,
+    "show_type_hints": true,
+    "show_value_hints": true,
+    "enabled": false
+  },
+  "format_on_save": "off",
+  "indent_guides": {
+    "coloring": "fixed",
+    "active_line_width": 2,
+    "line_width": 1
+  },
+  "which_key": {
+    "enabled": false
+  },
+  "toolbar": {
+    "code_actions": false,
+    "agent_review": false
+  },
+  "minimap": {
+    "show": "auto"
+  },
+  "scrollbar": {
+    "axes": {
+      "horizontal": true
+    }
+  },
+  "relative_line_numbers": "enabled",
+  "sticky_scroll": {
+    "enabled": true
+  },
+  "cli_default_open_behavior": "existing_window",
+  "current_line_highlight": "all",
+  "rounded_selection": false,
+  "terminal": {
+    "font_size": 18.0
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true
+  },
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": true,
+    "show": false
+  },
+  "project_panel": {
+    "hide_root": false,
+    "git_status_indicator": true,
+    "diagnostic_badges": true,
+    "bold_folder_labels": true,
+    "starts_open": true,
+    "auto_reveal_entries": false,
+    "indent_size": 22.0,
+    "entry_spacing": "comfortable",
+    "hide_gitignore": false
+  },
+  "buffer_font_weight": 400.0,
+  "git_panel": {
+    "tree_view": true
+  },
+  "icon_theme": "Material Icon Theme",
+  "base_keymap": "VSCode",
+  "gutter": {
+    "line_numbers": true
+  },
+  "buffer_font_family": "UbuntuMono Nerd Font Mono",
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "vim_mode": true,
+  "ui_font_size": 16.0,
+  "buffer_font_size": 18.0,
+  "theme": "Kanagawa",
+  "theme_overrides": {
+    "Kanagawa": {
+      "vim.yank.background": "#FE7F1F"
+    }
+  }
+}

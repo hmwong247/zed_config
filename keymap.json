@@ -1,0 +1,44 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  // nav
+  {
+    "context": "!SettingsWindow && !Picker && !ProjectSearchBar && !BufferSearchBar && Editor && vim_mode != insert",
+    "bindings": {
+      "space t t": "workspace::ToggleRightDock",
+      "space s f": "file_finder::Toggle",
+      "space space": "tab_switcher::OpenInActivePane",
+      "space a": "pane::AlternateFile",
+    },
+  },
+  {
+    "context": "!SettingsWindows && !Picker && !ProjectSearchBar && !BufferSearchBar && EmptyPane",
+    "bindings": {
+      "space t t": "workspace::ToggleRightDock",
+      "space s f": "file_finder::Toggle",
+      "space space": "tab_switcher::OpenInActivePane",
+    },
+  },
+  
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift s": "vim::PushAddSurrounds"
+    }
+  },
+  
+  // lsp
+  {
+    "context": "!SettingsWindows && !Picker && !ProjectSearchBar && !BufferSearchBar && Editor && vim_mode != insert",
+    "bindings": {
+      "space g r": "editor::FindAllReferences",
+      "space g d": "editor::GoToDefinition",
+      "space g i": "editor::GoToImplementation",
+    },
+  },
+]
