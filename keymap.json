@@ -12,8 +12,12 @@
     "bindings": {
       "space t t": "workspace::ToggleRightDock",
       "space s f": "file_finder::Toggle",
-      "space space": "tab_switcher::OpenInActivePane",
       "space a": "pane::AlternateFile",
+      "space space": "tab_switcher::OpenInActivePane",
+      "space d v h": "git_graph::Open",
+      "space d v f h": "git::FileHistory",
+      "space d v [": "git::OpenFileDiff",
+      "space d v ]": "git::Diff"
     },
   },
   {
@@ -22,6 +26,9 @@
       "space t t": "workspace::ToggleRightDock",
       "space s f": "file_finder::Toggle",
       "space space": "tab_switcher::OpenInActivePane",
+      "space d v h": "git_graph::Open",
+      "space d v [": "git::OpenFileDiff",
+      "space d v ]": "git::Diff"
     },
   },
   
@@ -39,6 +46,18 @@
       "space g r": "editor::FindAllReferences",
       "space g d": "editor::GoToDefinition",
       "space g i": "editor::GoToImplementation",
+      "] d": [
+        "editor::GoToDiagnostic",
+        {
+          "severity": "error"
+        }
+      ],
+      "[ d": [
+        "editor::GoToPreviousDiagnostic",
+        {
+          "severity": "error"
+        }
+      ]
     },
   },
 ]
